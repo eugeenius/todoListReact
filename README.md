@@ -1,2 +1,2 @@
 # todoListReact
-React - пробуем написать todo list
+Изучение React: todo list

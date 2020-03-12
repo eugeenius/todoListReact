@@ -1,0 +1,129 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+#root {
+  display: flex;
+  justify-content: center;
+  padding: 20px 0;
+}
+
+.app {
+  padding: 20px;
+  box-sizing: border-box;
+  min-height: calc(100vh - 40px);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: stretch;
+  width: 50%;
+  background-color: #d7f8ed;
+  border-radius: 5px;
+  color: rgb(85, 85, 85);
+}
+
+  .title {
+    margin-bottom: 25px;
+    line-height: 1;
+  }
+
+  .title h1 {
+    font-size: 21px;
+  }
+
+  .todo {
+    padding: 7px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 5px;
+    background-color: #fff;
+  }
+
+    .todo p {
+      display: flex;
+      justify-content: flex-start;
+      align-items: flex-start;
+      flex-wrap: wrap;
+      overflow: hidden;
+      font-size: 18px;
+    }
+
+    .todo .buttons {
+      display: flex;
+      justify-content: space-between;
+      align-items: stretch;
+      padding-left: 10px;
+    }
+
+    .todo .buttons button {
+        line-height: 0.85;
+        padding: 5px;
+        font-size: 15px;
+        color: white;
+        border-radius: 5px;
+        border: none;
+        cursor: pointer;
+      }
+
+        .todo .buttons button:first-child {
+          margin-right: 7px;
+          background-color: rgb(102, 155, 102);
+        }
+
+          .todo .buttons button:first-child:hover {
+            background-color: rgb(37, 134, 37);
+          }
+
+          .todo .buttons button:first-child.done {
+          background-color: rgb(235, 178, 22);
+        }
+    
+          .todo .buttons button:first-child.done:hover {
+            background-color: rgb(204, 156, 24);
+          }
+
+        .todo .buttons button:last-child {
+          background-color: rgb(163, 79, 79);
+        }
+
+          .todo .buttons button:last-child:hover {
+            background-color: rgb(209, 26, 26);
+          }
+
+form {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  height: 50px;
+}
+
+  form input {
+    padding: 0 10px;
+    margin-right: 15px;
+    font-size: 20px;
+    color: rgb(85, 85, 85);
+    border: none;
+    border-radius: 5px;
+    flex-grow: 1;
+    max-width: 100%;
+  }
+
+  form button {
+    padding: 0 15px;
+    line-height: 0.85;
+    font-size: 14px;
+    border: none;
+    text-transform: uppercase;
+    border-radius: 5px;
+    color: white;
+    background-color: rgb(111, 194, 243);
+    cursor: pointer;
+  }
+
+    form button:hover {
+      background-color: rgb(24, 130, 192);
+    }
